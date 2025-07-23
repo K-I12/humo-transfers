@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Humo Transfers</string>
+    <string name="home_screen">Главная</string>
+    <string name="history_screen">История</string>
+    <string name="other_screen">Еще</string>
+    <string name="card_screen">Карты</string>
+</resources>
