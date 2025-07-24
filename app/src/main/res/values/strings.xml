@@ -4,4 +4,19 @@
     <string name="history_screen">История</string>
     <string name="other_screen">Еще</string>
     <string name="card_screen">Карты</string>
+    <string name="send_transfer">Отправить перевод</string>
+    <string name="send_money_abroad">Отправляйте денежные переводы зарубеж</string>
+    <string name="transfer_instruction">Инструкция к переводу</string>
+    <string name="enter_required_data">Введите необходимые данные</string>
+    <string name="fill_fields_and_continue">Заполните все необходимые поля и нажмите на кнопку “Продолжить”</string>
+    <string name="step_one">1</string>
+    <string name="step_two">2</string>
+    <string name="step_three">3</string>
+    <string name="select_country_for_transfer">Выберите страну для перевода</string>
+    <string name="press_button_to_select_country">Нажмите на кнопку выше, чтобы выбрать страну для перевода</string>
+    <string name="supported_cards">Поддерживаются карты VISA, Корти Милли, MasterCard, МИР и другие</string>
+    <string name="select_transfer_type">Выберите тип перевода</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
+    <string name="press_refresh_to_load_popular_countries">Нажмите на кнопку «Обновить», чтобы загрузить «Популярные страны»</string>
+    <string name="refresh">Обновить</string>
 </resources>
