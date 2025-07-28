@@ -55,61 +55,50 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/ic_notification" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_money_abroad"
+                    android:textAlignment="center"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_transfer" />
+
+                <Button
+                    android:id="@+id/send_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/button_background_tint"
+                    android:text="@string/send_transfer"/>
 
             </LinearLayout>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/card_background"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="16dp"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="0dp"
-                        android:text="@string/send_money_abroad"
-                        android:textAlignment="center"
-                        android:textSize="21sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:layout_width="216dp"
-                        android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:contentDescription="@null"
-                        android:scaleType="centerInside"
-                        android:src="@drawable/ic_transfer" />
-
-                    <Button
-                        android:id="@+id/send_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="20dp"
-                        android:layout_marginBottom="16dp"
-                        android:backgroundTint="@color/button_background_tint"
-                        android:text="@string/send_transfer" />
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                android:background="@color/card_background"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="0dp">
+                android:padding="16dp"
+                android:background="@drawable/rounded_background"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:id="@+id/instruction_ll"
@@ -117,7 +106,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:padding="16dp"
                     android:visibility="gone">
 
                     <TextView
@@ -125,7 +113,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/transfer_instruction"
                         android:textSize="21sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -134,22 +122,20 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp">
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
                                 android:text="@string/step_one"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
-
-                        </androidx.cardview.widget.CardView>
+                                android:textStyle="bold"/>
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -164,13 +150,13 @@
                                 android:layout_marginBottom="8dp"
                                 android:text="@string/select_country_for_transfer"
                                 android:textSize="15sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/press_button_to_select_country"
-                                android:textSize="15sp" />
+                                android:textSize="15sp"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -182,22 +168,20 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp">
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
                                 android:text="@string/step_two"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
-
-                        </androidx.cardview.widget.CardView>
+                                android:textStyle="bold"/>
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -212,13 +196,13 @@
                                 android:layout_marginBottom="8dp"
                                 android:text="@string/select_transfer_type"
                                 android:textSize="15sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/supported_cards"
-                                android:textSize="15sp" />
+                                android:textSize="15sp"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -230,22 +214,20 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp">
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center"
                                 android:text="@string/step_three"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
-
-                        </androidx.cardview.widget.CardView>
+                                android:textStyle="bold"/>
+                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -260,13 +242,13 @@
                                 android:layout_marginBottom="8dp"
                                 android:text="@string/enter_required_data"
                                 android:textSize="15sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:text="@string/fill_fields_and_continue"
-                                android:textSize="15sp" />
+                                android:textSize="15sp"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -279,7 +261,6 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:padding="16dp"
                     android:visibility="visible">
 
                     <TextView
@@ -296,12 +277,12 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp" />
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical"/>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -310,20 +291,16 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="140dp"
                                 android:layout_height="16dp"
-                                android:layout_marginBottom="6dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/rounded_placeholder"/>
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="80dp"
                                 android:layout_height="16dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:background="@drawable/rounded_placeholder"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -335,12 +312,12 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp" />
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical"/>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -349,20 +326,16 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="140dp"
                                 android:layout_height="16dp"
-                                android:layout_marginBottom="6dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/rounded_placeholder"/>
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="80dp"
                                 android:layout_height="16dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:background="@drawable/rounded_placeholder"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -374,12 +347,12 @@
                         android:orientation="horizontal"
                         android:paddingVertical="8dp">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:backgroundTint="@color/background"
-                            app:cardCornerRadius="40dp"
-                            app:cardElevation="0dp" />
+                            android:background="@drawable/circle_background"
+                            android:gravity="center"
+                            android:orientation="vertical"/>
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -388,20 +361,16 @@
                             android:layout_weight="1"
                             android:orientation="vertical">
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="140dp"
                                 android:layout_height="16dp"
-                                android:layout_marginBottom="6dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/rounded_placeholder"/>
 
-                            <androidx.cardview.widget.CardView
+                            <LinearLayout
                                 android:layout_width="80dp"
                                 android:layout_height="16dp"
-                                android:backgroundTint="@color/background"
-                                app:cardCornerRadius="16dp"
-                                app:cardElevation="0dp" />
+                                android:background="@drawable/rounded_placeholder"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -461,7 +430,7 @@
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
         </LinearLayout>
 
